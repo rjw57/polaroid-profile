@@ -12,7 +12,7 @@ function gravatar_url(email, size) {
   var cacheBuster = 'date='+d.getTime().toString()
 
   email = hex_md5(trim(email).toLowerCase());
-  console.log('<img src="https://www.gravatar.com/avatar/' + email + size_query + cacheBuster + '">');
+  
   return '<img src="https://www.gravatar.com/avatar/' + email + size_query + cacheBuster + '">';
 }
 
