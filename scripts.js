@@ -3,14 +3,17 @@ function trim (str) {
 }
 
 function gravatar_url(email, size) {
-  var size_query = '';
+  var size_query = '?';
   if(size) {
-    size_query = '?s=' + parseInt(size);
+    size_query += 's=' + parseInt(size)+'&';
   }
+  
+  var d = new Date();
+  var cacheBuster = 'date='+d.getTime().toString()
 
   email = hex_md5(trim(email).toLowerCase());
-
-  return '<img src="https://www.gravatar.com/avatar/' + email + size_query + '">';
+  
+  return '<img src="https://www.gravatar.com/avatar/' + email + size_query + cacheBuster + '">';
 }
 
 $(document).ready(function() {
