@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Architects+Daughter);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+body {
+  background: #eee;
+  background-image: url('page-bg.png');
+}
+
+.content {
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.edit:hover {
+  background-color: #eee;
+  cursor: text;
+}
+
+.avatar {
+  margin-right: 20px;
+}
+
+.content table td { vertical-align: top; }
+
+.avatar-wrapper {
+  padding: 15px 15px 5px 15px;
+  background: white;
+  box-shadow: 0px 2px 5px #888;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.avatar .caption {
+  padding: 10px 0px;
+  width: 256px;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.description {
+  min-height: 310px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.avatar-gravatar {
+  min-width: 256px;
+  min-height: 256px;
+}
+
+.centered { text-align: center; }
+
+@media print { 
+  .noprint { display: none; }
+}
